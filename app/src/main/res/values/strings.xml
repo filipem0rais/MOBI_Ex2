@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Metabolisme de base</string>
+    <string name="weight">poids [kg]</string>
+    <string name="height">taille [m]</string>
+    <string name="age">age</string>
+    <string name="women">femme</string>
+    <string name="men">men</string>
+    <string name="calculer">Calculer</string>
+    <string name="effacer">Effacer</string>
+    <string name="nombre_de_kcal_jour">Nombre de kCal/jour :</string>
+    <string name="_0">0</string>
+    <string name="age_">Age : </string>
+</resources>
