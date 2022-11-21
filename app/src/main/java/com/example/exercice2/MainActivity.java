@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //region Variables
     private EditText height;
     private EditText weight;
     //private EditText age;
@@ -21,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton men;
     private RadioButton women;
     private TextView meta;
+    //endregion
+
+    /**
+     * Event lors de la creation de l'activité
+     *
+     * @param savedInstanceState Bundle
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Calcul du metabolisme de base
+     *
+     * @param view Contecte
+     */
     public void calculate(View view) {
         height = (EditText) findViewById(R.id.editHeight);
         weight = (EditText) findViewById(R.id.editWeight);
@@ -80,7 +93,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    /**
+     * Efface les champs
+     *
+     * @param view Contexte
+     */
     public void clear(View view) {
         height = (EditText) findViewById(R.id.editHeight);
         weight = (EditText) findViewById(R.id.editWeight);
@@ -90,8 +107,12 @@ public class MainActivity extends AppCompatActivity {
         height.setText("");
         weight.setText("");
         age.setProgress(0);
+        meta.setText("");
     }
 
+    /**
+     * Listener pour les boutons
+     */
     private class MyListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
