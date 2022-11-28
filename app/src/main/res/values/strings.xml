@@ -10,4 +10,6 @@
     <string name="nombre_de_kcal_jour">Nombre de kCal/jour :</string>
     <string name="_0">0</string>
     <string name="age_">Age : </string>
+    <string name="other_item">other_item</string>
+    <string name="settings_item">settings_item</string>
 </resources>

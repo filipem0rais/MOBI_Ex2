@@ -1,9 +1,12 @@
 package com.example.exercice2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -125,5 +128,26 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_other:
+                Toast.makeText(this, "Other menu", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.menu_settings:
+                Toast.makeText(this, "Settings menu", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 }
